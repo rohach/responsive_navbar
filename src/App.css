@@ -1,38 +1,38 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Nunito:wght@300;400;500&family=Open+Sans:wght@300;400;500&display=swap");
+/* heading */
+/* font-family: "Libre Baskerville", serif; */
+/* small */
+/* font-family: "Nunito", sans-serif; */
+/* regular */
+/* font-family: "Open Sans", sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--bg);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --large: 75%;
+  --medium: 85%;
+  --small: 95%;
+  --bg: #ddd0c8;
+  --second-bg: #323232;
+  --first-text: #000000;
+  --second-text: #302d2b;
+  --third-text: #464646;
+  --white: #ffffff;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.container {
+  width: var(--large);
+  margin: 0 auto;
+}
+@media screen and (max-width: 948px) {
+  .container {
+    width: var(--medium);
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media screen and (max-width: 800px) {
+  .container {
+    width: var(--small);
   }
 }
